@@ -1,22 +1,38 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
 import './App.css';
+import StartScreen from './screens/StartScreen.js'
+import GameScreen from './screens/GameScreen.js'
+
 
 function App() {
+  const [numberOfLetters, setNumberOfLetters] = useState(5);
+  const [letterCount, setLetterCount] = useState();
+   
+   
+   
+     const startGameHandler = (letterCount) => {
+        console.log(letterCount);
+        setLetterCount(letterCount);
+        
+    };
+  
+  let content = <StartScreen startGame = {startGameHandler}/>
+  
+  
+  const startGame = (chosenLetters) => {
+    setLetterCount(chosenLetters)
+  }
+  
+  if (letterCount) {
+    content = <GameScreen amount={letterCount}/>
+  }
+  
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        {content}
+        
       </header>
     </div>
   );
