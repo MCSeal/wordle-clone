@@ -6,7 +6,7 @@ import GameScreen from './screens/GameScreen.js'
 
 function App() {
   const [numberOfLetters, setNumberOfLetters] = useState(5);
-  const [letterCount, setLetterCount] = useState();
+  const [letterCount, setLetterCount] = useState(4);
    
    
    

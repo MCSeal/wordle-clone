@@ -4,7 +4,7 @@ import style from './StartScreen.css';
 
 const StartScreen = (props) => {
     const [selectedNumber, setSelectedNumber] = useState(5);
-
+    
    
    const decreaseButton = () => {
        if (selectedNumber === 5){
