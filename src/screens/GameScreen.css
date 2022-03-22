@@ -15,6 +15,40 @@
    font-size: 35px;
 }
 
+.tile-matched{
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+   background-color: green;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   font-size: 35px;
+}
+
+.tile-includes{
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+   background-color: yellow;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   font-size: 35px;
+}
+
+
+.previous{
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+   background-color: grey;
+   width: 25px;
+   height: 25px;
+   text-align: center;
+   font-size: 35px;
+}
+
 .tile_holder{
     display: flex;
 }
